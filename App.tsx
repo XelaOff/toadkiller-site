@@ -96,7 +96,7 @@ const App: React.FC = () => {
                         </div>
                         <div className="bg-[#166534]/40 backdrop-blur-md border-[2px] md:border-[3px] border-[#166534]/50 p-6 md:p-8 rounded-2xl md:rounded-[3rem] text-center transform transition-all hover:bg-[#166534]/60">
                             <div className="font-cartoon text-4xl md:text-5xl text-green-400">0% TAX</div>
-                            <div className="text-xs md:text-sm font-bold text-[#fefce8] tracking-[0.1em] md:tracking-[0.2em] uppercase mt-2 md:mt-4">Pure Ribbit</div>
+                            <div className="text-xs md:text-sm font-bold text-[#fefce8] tracking-[0.1em] md:tracking-[0.2em] uppercase mt-2 md:mt-4">Zero Cuts</div>
                         </div>
                     </div>
                 </div>
