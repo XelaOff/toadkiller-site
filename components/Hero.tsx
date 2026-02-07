@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative pt-0 pb-16 md:pb-24 px-4 overflow-hidden">
+    <div className="relative pt-16 md:pt-0 pb-16 md:pb-24 px-4 overflow-hidden">
       {/* Moving Clouds */}
       <div className="absolute top-20 left-0 right-0 h-40 overflow-hidden pointer-events-none">
         <div className="cloud-1 absolute w-32 h-12 bg-white rounded-full opacity-30 blur-md"></div>
