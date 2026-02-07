@@ -4,9 +4,11 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <div className="relative pt-20 pb-16 md:pb-24 px-4 overflow-hidden">
-      {/* Ambient Clouds */}
-      <div className="absolute top-40 left-[-10%] opacity-10 animate-[wave_30s_linear_infinite]">
-         <div className="w-80 h-32 bg-[#fefce8] rounded-full blur-[100px]"></div>
+      {/* Moving Clouds */}
+      <div className="absolute top-20 left-0 right-0 h-40 overflow-hidden pointer-events-none">
+        <div className="cloud-1 absolute w-32 h-12 bg-white rounded-full opacity-30 blur-md"></div>
+        <div className="cloud-2 absolute w-40 h-14 bg-white rounded-full opacity-25 blur-md" style={{ top: '60px' }}></div>
+        <div className="cloud-3 absolute w-28 h-10 bg-white rounded-full opacity-20 blur-md" style={{ top: '30px' }}></div>
       </div>
 
       <div className="container mx-auto text-center relative z-10">

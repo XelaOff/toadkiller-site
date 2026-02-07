@@ -90,6 +90,24 @@
         .animate-scroll {
             animation: scroll 30s linear infinite;
         }
+
+        /* Cloud animations */
+        @keyframes cloud-drift {
+            0% { left: -150px; }
+            100% { left: 100%; }
+        }
+        .cloud-1 {
+            top: 0;
+            animation: cloud-drift 40s linear infinite;
+        }
+        .cloud-2 {
+            animation: cloud-drift 55s linear infinite;
+            animation-delay: -20s;
+        }
+        .cloud-3 {
+            animation: cloud-drift 35s linear infinite;
+            animation-delay: -10s;
+        }
     </style>
 <script type="importmap">
 {
