@@ -3,7 +3,7 @@ import React from 'react';
 
 export const CONTRACT_ADDRESS = "0x370a366f402e2e41cdbbe54ecec12aae0cce1955";
 
-export const LORE_TEXT = "In the deep, digital marshes of the blockchain, one toad stood taller than the rest. Not because he was bigger, but because he had the loudest ribbit. $TOAD is not just a meme; it's a way of life. Hop in, the water's fine!";
+export const LORE_TEXT = "In the digital swamps of crypto, frogs ruled with their ribbits. Then came the Toad Killer — a savage with one mission: hunt every frog. Frogs becoming princes are just fairytales. $TOAD is the alpha predator. No more hopping, only hunting!";
 
 export const SOCIAL_LINKS = {
   twitter: "https://x.com/toadkiller420",

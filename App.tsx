@@ -77,9 +77,9 @@ const App: React.FC = () => {
         <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
           <div className="glass-panel rounded-[3rem] md:rounded-[5rem] p-8 md:p-24 relative overflow-hidden group border-[4px] md:border-[6px] border-[#fefce8]/30">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
-                <div className="relative z-10 order-2 md:order-1">
+                <div className="relative z-10 order-2 md:order-1 text-center md:text-left">
                     <span className="font-marker text-yellow-400 text-2xl md:text-4xl block mb-4 md:mb-6 tracking-wide drop-shadow-[0_3px_0_#166534] md:drop-shadow-[0_4px_0_#166534]">The Prophecy</span>
-                    <h2 className="font-cartoon text-6xl md:text-8xl text-[#fefce8] mb-6 md:mb-10 drop-shadow-[0_4px_0_#166534] md:drop-shadow-[0_6px_0_#166534] uppercase leading-none">Marsh Lore</h2>
+                    <h2 className="font-cartoon text-6xl md:text-8xl text-[#fefce8] mb-6 md:mb-10 drop-shadow-[0_4px_0_#166534] md:drop-shadow-[0_6px_0_#166534] uppercase leading-none">Avcı Masalı</h2>
                     <p className="text-xl md:text-4xl text-[#fefce8] leading-relaxed md:leading-snug font-medium mb-8 md:mb-12 italic opacity-90">
                       {LORE_TEXT}
                     </p>
@@ -96,9 +96,9 @@ const App: React.FC = () => {
                 </div>
                 <div className="relative order-1 md:order-2">
                    <div className="bg-yellow-400 rounded-3xl md:rounded-[4rem] p-4 md:p-6 shadow-[0_15px_30px_rgba(0,0,0,0.5)] md:shadow-[0_25px_50px_rgba(0,0,0,0.5)] -rotate-2 md:-rotate-3 hover:rotate-0 transition-all duration-1000 ease-in-out">
-                        <img 
-                            src="/banner.jpg" 
-                            alt="The Swamp Art" 
+                        <img
+                            src="/banner.jpg"
+                            alt="The Swamp Art"
                             className="rounded-2xl md:rounded-[3rem] border-4 md:border-8 border-[#166534]"
                         />
                    </div>

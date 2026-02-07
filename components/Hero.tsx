@@ -13,9 +13,9 @@ const Hero: React.FC = () => {
         <div className="relative inline-block mb-8 md:mb-12">
             <div className="relative group">
                 <div className="absolute inset-0 bg-yellow-400 blur-[60px] opacity-30 rounded-full scale-110"></div>
-                <img 
-                    src="/logo.png" 
-                    alt="The Toad King" 
+                <img
+                    src="/logo.png"
+                    alt="The Toad King"
                     className="w-48 h-48 md:w-[380px] md:h-[380px] object-cover rounded-full border-[8px] md:border-[12px] border-[#166534] shadow-[0_15px_45px_rgba(0,0,0,0.3)] mx-auto relative z-10 block"
                 />
             </div>
@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
             <a href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x370a366f402e2e41CDBbE54EcEC12aaE0cce1955" target="_blank" rel="noopener noreferrer" className="bg-yellow-400 hover:bg-yellow-300 text-[#166534] font-cartoon text-2xl md:text-3xl px-10 md:px-12 py-4 md:py-5 rounded-xl md:rounded-[1.5rem] shadow-[0_6px_0_#166534] md:shadow-[0_8px_0_#166534] active:translate-y-1.5 active:shadow-none transition-all transform hover:scale-105">
                 GET $TOAD
             </a>
-            <a href="https://dexscreener.com/ethereum/0x370a366f402e2e41cdbbe54ecec12aae0cce1955" target="_blank" rel="noopener noreferrer" className="bg-[#fefce8] hover:bg-white text-[#166534] font-cartoon text-2xl md:text-3xl px-6 py-4 md:py-5 rounded-xl md:rounded-[1.5rem] border-[3px] border-[#166534] shadow-[0_6px_0_#166534] md:shadow-[0_8px_0_#166534] active:translate-y-1.5 active:shadow-none transition-all transform hover:scale-105">
+            <a href="https://dexscreener.com/ethereum/0x370a366f402e2e41cdbbe54ecec12aae0cce1955" target="_blank" rel="noopener noreferrer" className="bg-[#fefce8] hover:bg-white text-[#166534] font-cartoon text-2xl md:text-3xl px-10 md:px-12 py-4 md:py-5 rounded-xl md:rounded-[1.5rem] border-[3px] border-[#166534] shadow-[0_6px_0_#166534] md:shadow-[0_8px_0_#166534] active:translate-y-1.5 active:shadow-none transition-all transform hover:scale-105">
                 DEXSCREENER
             </a>
         </div>

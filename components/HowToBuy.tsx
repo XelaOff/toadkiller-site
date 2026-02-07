@@ -14,21 +14,21 @@ const BuyStep: React.FC<BuyStepProps> = ({ number, title, description, icon, ali
   const isLeft = align === 'left';
 
   return (
-    <div className={`flex flex-col md:flex-row items-center gap-8 md:gap-12 mb-20 md:mb-36 relative ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+    <div className={`flex flex-col md:flex-row items-center gap-6 md:gap-8 mb-12 md:mb-20 relative ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
       {/* Step Icon & Number */}
       <div className="relative group z-30 shrink-0">
-        <div className="w-28 h-28 md:w-40 md:h-40 bg-[#fefce8] rounded-full border-[4px] md:border-[6px] border-[#166534] flex items-center justify-center float-anim shadow-2xl relative">
-            <img src={icon} alt={title} className={iconClassName || "w-16 h-16 md:w-24 md:h-24 object-contain transition-transform group-hover:scale-115"} />
-            <div className="absolute -top-2 -right-2 md:-top-4 md:-right-4 w-10 h-10 md:w-14 md:h-14 bg-yellow-400 border-[3px] md:border-[4px] border-[#166534] rounded-full flex items-center justify-center font-cartoon text-xl md:text-3xl text-[#166534] shadow-xl z-40">
+        <div className="w-20 h-20 md:w-28 md:h-28 bg-[#fefce8] rounded-full border-[3px] md:border-[4px] border-[#166534] flex items-center justify-center float-anim shadow-xl relative">
+            <img src={icon} alt={title} className={iconClassName || "w-12 h-12 md:w-16 md:h-16 object-contain transition-transform group-hover:scale-115"} />
+            <div className="absolute -top-1 -right-1 md:-top-2 md:-right-2 w-8 h-8 md:w-10 md:h-10 bg-yellow-400 border-[2px] md:border-[3px] border-[#166534] rounded-full flex items-center justify-center font-cartoon text-lg md:text-xl text-[#166534] shadow-lg z-40">
               {number}
             </div>
         </div>
       </div>
 
       {/* Chat Balloon */}
-      <div className={`relative flex-1 p-8 md:p-14 rounded-[2.5rem] md:rounded-[4rem] border-[4px] md:border-[5px] border-[#fefce8] balloon-shadow transition-all duration-500 hover:scale-[1.02] ${isLeft ? 'bg-[#166534] rounded-bl-none' : 'bg-yellow-400 rounded-br-none'}`}>
+      <div className={`relative flex-1 p-5 md:p-8 rounded-[1.5rem] md:rounded-[2rem] border-[3px] md:border-[4px] border-[#fefce8] balloon-shadow transition-all duration-500 hover:scale-[1.02] ${isLeft ? 'bg-[#166534] rounded-bl-none' : 'bg-yellow-400 rounded-br-none'}`}>
         {/* Tail Connector */}
-        <div className={`absolute bottom-[-5px] ${isLeft ? 'left-[-20px] md:left-[-30px]' : 'right-[-20px] md:right-[-30px]'} w-10 h-10 md:w-16 md:h-16`}>
+        <div className={`absolute bottom-[-4px] ${isLeft ? 'left-[-15px] md:left-[-20px]' : 'right-[-15px] md:right-[-20px]'} w-8 h-8 md:w-10 md:h-10`}>
            <svg viewBox="0 0 100 100" className="w-full h-full">
               {/* Tail Background */}
               <path 
@@ -45,11 +45,11 @@ const BuyStep: React.FC<BuyStepProps> = ({ number, title, description, icon, ali
            </svg>
         </div>
 
-        <h3 className={`font-cartoon text-3xl md:text-5xl mb-4 md:mb-6 tracking-wide uppercase ${isLeft ? 'text-yellow-400' : 'text-[#166534]'}`}>
+        <h3 className={`font-cartoon text-2xl md:text-3xl mb-3 md:mb-4 tracking-wide uppercase ${isLeft ? 'text-yellow-400' : 'text-[#166534]'}`}>
           {title}
         </h3>
-        
-        <p className={`text-lg md:text-2xl font-medium leading-relaxed ${isLeft ? 'text-[#fefce8]' : 'text-[#166534]'}`}>
+
+        <p className={`text-base md:text-lg font-medium leading-relaxed ${isLeft ? 'text-[#fefce8]' : 'text-[#166534]'}`}>
           {description}
         </p>
       </div>
@@ -83,22 +83,22 @@ const HowToBuy: React.FC = () => {
     {
       number: "4",
       title: "Swap for $TOAD",
-      description: "Trade your ETH for $TOAD. We have ZERO taxes, so set your slippage low! Welcome to the marsh, you're officially one of us now.",
+      description: "Trade your ETH for $TOAD. We have ZERO taxes, so set your slippage low! Welcome to the pack, you're officially a hunter now.",
       icon: "/logo.png",
       align: "right" as const,
-      iconClassName: "w-24 h-24 md:w-32 md:h-32 object-contain transition-transform group-hover:scale-115"
+      iconClassName: "w-16 h-16 md:w-20 md:h-20 object-contain transition-transform group-hover:scale-115"
     }
   ];
 
   return (
-    <section id="how-to-buy" className="container mx-auto px-4 py-20 md:py-40 relative">
-      <div className="text-center mb-20 md:mb-40">
-        <h2 className="font-cartoon text-6xl md:text-[10rem] text-[#fefce8] drop-shadow-[0_8px_0_#166534] md:drop-shadow-[0_12px_0_#166534] mb-4 md:mb-8 uppercase leading-none">
+    <section id="how-to-buy" className="container mx-auto px-4 py-12 md:py-20 relative">
+      <div className="text-center mb-12 md:mb-20">
+        <h2 className="font-cartoon text-5xl md:text-7xl text-[#fefce8] drop-shadow-[0_6px_0_#166534] md:drop-shadow-[0_8px_0_#166534] mb-4 md:mb-8 uppercase leading-none">
           How to Buy
         </h2>
-        <div className="flex justify-center gap-3 md:gap-4">
+        <div className="flex justify-center gap-2 md:gap-3">
             {[...Array(5)].map((_, i) => (
-                <div key={i} className="w-4 h-4 md:w-6 md:h-6 bg-yellow-400 border-[2px] md:border-[3px] border-[#166534] rounded-full animate-bounce" style={{ animationDelay: `${i * 0.2}s` }}></div>
+                <div key={i} className="w-3 h-3 md:w-4 md:h-4 bg-yellow-400 border-[2px] border-[#166534] rounded-full animate-bounce" style={{ animationDelay: `${i * 0.2}s` }}></div>
             ))}
         </div>
       </div>

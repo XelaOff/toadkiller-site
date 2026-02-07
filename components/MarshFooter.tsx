@@ -54,14 +54,14 @@ const MarshFooter: React.FC = () => {
   return (
     <footer className="relative">
       {/* Grass Layers */}
-      <div className="relative h-48 pointer-events-none">
+      <div className="relative h-32 pointer-events-none">
         {backgroundGrass.map((g, i) => <GrassBlade key={`bg-${i}`} {...g} />)}
         {cattails.map((c, i) => <Cattail key={`cat-${i}`} {...c} />)}
         {foregroundGrass.map((g, i) => <GrassBlade key={`fg-${i}`} {...g} />)}
       </div>
 
       {/* Main Footer Body */}
-      <div className="bg-[#1a120b] pt-16 pb-12 relative border-t-8 border-[#1b4332]">
+      <div className="bg-[#1a120b] pt-10 pb-8 relative border-t-4 border-[#1b4332]">
         {/* Bubbles */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {[...Array(10)].map((_, i) => (
