@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
           <span className="font-cartoon text-6xl sm:text-7xl md:text-[9rem] text-[#166534] drop-shadow-[0_6px_0_#fefce8] md:drop-shadow-[0_10px_0_#fefce8] uppercase tracking-tighter">
             $TOAD
           </span>
-          <span className="font-marker text-3xl sm:text-4xl md:text-6xl text-yellow-400 drop-shadow-[0_3px_0_#166534] md:drop-shadow-[0_4px_0_#166534] ml-2 md:ml-4 -rotate-6 inline-block">
+          <span className="font-marker text-3xl sm:text-4xl md:text-6xl text-yellow-400 drop-shadow-[0_3px_0_#1e2140] md:drop-shadow-[0_4px_0_#1e2140] ml-2 md:ml-4 -rotate-6 inline-block">
             Killer
           </span>
         </h1>
