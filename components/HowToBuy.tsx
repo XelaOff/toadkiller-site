@@ -26,25 +26,7 @@ const BuyStep: React.FC<BuyStepProps> = ({ number, title, description, icon, ali
       </div>
 
       {/* Chat Balloon */}
-      <div className={`relative flex-1 p-5 md:p-8 rounded-[1.5rem] md:rounded-[2rem] border-[3px] md:border-[4px] border-[#fefce8] balloon-shadow transition-all duration-500 hover:scale-[1.02] ${isLeft ? 'bg-[#166534] rounded-bl-none' : 'bg-yellow-400 rounded-br-none'}`}>
-        {/* Tail Connector */}
-        <div className={`absolute bottom-[-4px] ${isLeft ? 'left-[-15px] md:left-[-20px]' : 'right-[-15px] md:right-[-20px]'} w-8 h-8 md:w-10 md:h-10`}>
-           <svg viewBox="0 0 100 100" className="w-full h-full">
-              {/* Tail Background */}
-              <path 
-                d={isLeft ? "M100 0 L0 100 L100 100 Z" : "M0 0 L100 100 L0 100 Z"} 
-                fill={isLeft ? "#166534" : "#facc15"} 
-              />
-              {/* Tail Border */}
-              <path 
-                d={isLeft ? "M100 0 L0 100" : "M0 0 L100 100"} 
-                stroke="#fefce8" 
-                strokeWidth="10" 
-                fill="none" 
-              />
-           </svg>
-        </div>
-
+      <div className={`relative flex-1 p-5 md:p-8 rounded-[1.5rem] md:rounded-[2rem] border-[3px] md:border-[4px] border-[#fefce8] balloon-shadow transition-all duration-500 hover:scale-[1.02] ${isLeft ? 'bg-[#166534]' : 'bg-yellow-400'}`}>
         <h3 className={`font-cartoon text-2xl md:text-3xl mb-3 md:mb-4 tracking-wide uppercase ${isLeft ? 'text-yellow-400' : 'text-[#166534]'}`}>
           {title}
         </h3>
