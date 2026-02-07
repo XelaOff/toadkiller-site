@@ -21,7 +21,7 @@ const Cattail = ({ x, height, delay }: { x: number, height: number, delay: numbe
     {/* Stem */}
     <div className="w-1 h-full bg-green-800 mx-auto rounded-full"></div>
     {/* Head */}
-    <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-3 h-10 bg-[#5d4037] rounded-full shadow-lg group-hover:scale-125 transition-transform"></div>
+    <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-3 h-10 bg-yellow-600/80 rounded-full shadow-lg group-hover:scale-125 transition-transform"></div>
     {/* Tip */}
     <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-0.5 h-3 bg-green-900"></div>
   </div>
