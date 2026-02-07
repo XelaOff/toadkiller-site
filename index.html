@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <title>ToadPond | The Galactic Marsh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Bungee&family=Luckiest+Guy&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pond-sun: #fef9c3; /* Lightest Cream Yellow */
+            --pond-sky: #fef08a; /* Yellow Sun Glow */
+            --pond-grass: #4ade80; /* Fresh Green */
+            --pond-mid: #166534; /* Deep Green */
+            --pond-dark: #064e3b; /* Dark Swamp */
+            --pond-offwhite: #fefce8; /* The requested Cream White */
+            --mud-dark: #1a120b;
+        }
+
+        body {
+            font-family: 'Fredoka', sans-serif;
+            overflow-x: hidden;
+            /* Static gradient from light top to dark bottom that scrolls with content */
+            background: linear-gradient(180deg, 
+                var(--pond-sun) 0%, 
+                var(--pond-sky) 5%, 
+                var(--pond-grass) 15%, 
+                var(--pond-mid) 40%, 
+                var(--pond-dark) 75%, 
+                var(--mud-dark) 100%
+            );
+            background-attachment: scroll;
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23166534' stroke='%23fefce8' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 8v-4M12 16v4M8 12h-4M16 12h4'/%3E%3C/svg%3E"), auto;
+        }
+
+        .font-cartoon { font-family: 'Luckiest Guy', cursive; }
+        .font-bungee { font-family: 'Bungee', cursive; }
+        .font-marker { font-family: 'Permanent Marker', cursive; }
+
+        @keyframes sway {
+            0% { transform: rotate(-2deg) skewX(-1deg); }
+            50% { transform: rotate(3deg) skewX(2deg); }
+            100% { transform: rotate(-2deg) skewX(-1deg); }
+        }
+        .sway-anim {
+            animation: sway 4s ease-in-out infinite;
+            transform-origin: bottom center;
+        }
+
+        @keyframes bob {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .bob-anim {
+            animation: bob 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0); }
+            50% { transform: translateY(-15px) rotate(2deg); }
+        }
+        .float-anim {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .glass-panel {
+            background: rgba(254, 252, 232, 0.1);
+            backdrop-filter: blur(12px);
+            border: 3px solid rgba(254, 252, 232, 0.2);
+        }
+
+        .balloon-shadow {
+            filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.25));
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: var(--pond-dark); }
+        ::-webkit-scrollbar-thumb { background: #fef08a; border-radius: 5px; border: 2px solid var(--pond-dark); }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
