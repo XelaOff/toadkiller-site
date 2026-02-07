@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative pt-20 pb-16 md:pb-24 px-4 overflow-hidden">
+    <div className="relative pt-0 pb-16 md:pb-24 px-4 overflow-hidden">
       {/* Moving Clouds */}
       <div className="absolute top-20 left-0 right-0 h-40 overflow-hidden pointer-events-none">
         <div className="cloud-1 absolute w-32 h-12 bg-white rounded-full opacity-30 blur-md"></div>
@@ -12,17 +12,15 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="container mx-auto text-center relative z-10">
-        <div className="relative inline-block mb-8 md:mb-12">
-            <div className="relative group">
-                <div className="absolute inset-0 bg-yellow-400 blur-[60px] opacity-30 rounded-full scale-110"></div>
-                <img
-                    src="/logo.png"
-                    alt="The Toad King"
-                    className="w-48 h-48 md:w-[380px] md:h-[380px] object-cover rounded-full border-[8px] md:border-[12px] border-[#166534] shadow-[0_15px_45px_rgba(0,0,0,0.3)] mx-auto relative z-10 block"
-                />
-            </div>
+        <div className="relative inline-block">
+            <img
+                src="/logo.png"
+                alt="The Toad King"
+                className="w-72 h-72 md:w-[550px] md:h-[550px] lg:w-[650px] lg:h-[650px] object-contain mx-auto"
+            />
         </div>
 
+        <div className="-mt-16 md:-mt-32 relative z-20">
         <h1 className="mb-4 md:mb-6 leading-none">
           <span className="font-cartoon text-6xl sm:text-7xl md:text-[9rem] text-[#166534] drop-shadow-[0_6px_0_#fefce8] md:drop-shadow-[0_10px_0_#fefce8] uppercase tracking-tighter">
             $TOAD
@@ -42,6 +40,7 @@ const Hero: React.FC = () => {
             <a href="https://dexscreener.com/ethereum/0x370a366f402e2e41cdbbe54ecec12aae0cce1955" target="_blank" rel="noopener noreferrer" className="bg-[#fefce8] hover:bg-white text-[#166534] font-cartoon text-2xl md:text-3xl px-10 md:px-12 py-4 md:py-5 rounded-xl md:rounded-[1.5rem] border-[3px] border-[#166534] shadow-[0_6px_0_#166534] md:shadow-[0_8px_0_#166534] active:translate-y-1.5 active:shadow-none transition-all transform hover:scale-105">
                 DEXSCREENER
             </a>
+        </div>
         </div>
       </div>
     </div>
