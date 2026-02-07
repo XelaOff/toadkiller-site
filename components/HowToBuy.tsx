@@ -58,7 +58,7 @@ const HowToBuy: React.FC = () => {
     {
       number: "3",
       title: "Go to Uniswap",
-      description: "Leap over to Uniswap. Connect your wallet and paste the $TOAD address. Ensure you're on the right lily pad before you jump!",
+      description: "Leap over to Uniswap. Connect your wallet and paste the $TOAD address. Double-check you're on the right trail before the hunt!",
       icon: "https://cryptologos.cc/logos/uniswap-uni-logo.png",
       align: "left" as const
     },
