@@ -6,6 +6,7 @@ import ContractBox from './components/ContractBox';
 import HowToBuy from './components/HowToBuy';
 import LilyPad from './components/LilyPad';
 import MarshFooter from './components/MarshFooter';
+import PriceTicker from './components/PriceTicker';
 import { LORE_TEXT, Icons } from './constants';
 
 const App: React.FC = () => {
@@ -27,8 +28,13 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen relative flex flex-col overflow-x-hidden text-[#fefce8]">
+      {/* Price Ticker */}
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <PriceTicker />
+      </div>
+
       {/* Top Nav */}
-      <div className="fixed top-4 left-4 right-4 z-50 flex justify-between items-center">
+      <div className="fixed top-10 left-4 right-4 z-50 flex justify-between items-center">
         {/* Logo - Left */}
         <a href="/" className="flex items-center">
           <img src="/logo.png" alt="Toad" className="w-10 h-10 md:w-12 md:h-12" />

@@ -81,6 +81,15 @@
         ::-webkit-scrollbar { width: 10px; }
         ::-webkit-scrollbar-track { background: var(--pond-dark); }
         ::-webkit-scrollbar-thumb { background: #fef08a; border-radius: 5px; border: 2px solid var(--pond-dark); }
+
+        /* Price ticker scroll */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-scroll {
+            animation: scroll 30s linear infinite;
+        }
     </style>
 <script type="importmap">
 {
