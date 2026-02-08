@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
             />
         </div>
 
-        <div className="-mt-16 md:-mt-32 relative z-20">
+        <div className="-mt-6 md:-mt-32 relative z-20">
         <h1 className="mb-4 md:mb-6 leading-none">
           <span className="font-cartoon text-6xl sm:text-7xl md:text-[9rem] text-[#166534] drop-shadow-[0_6px_0_#fefce8] md:drop-shadow-[0_10px_0_#fefce8] uppercase tracking-tighter">
             $TOAD
