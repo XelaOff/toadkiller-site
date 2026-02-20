@@ -48,7 +48,7 @@ const App: React.FC = () => {
             rel="noopener noreferrer"
             className="group bg-green-500 hover:bg-green-400 text-green-900 font-cartoon px-4 py-3 rounded-2xl flex items-center gap-2 transition-all hover:scale-105 shadow-[0_6px_0_#166534] active:translate-y-1 active:shadow-none"
           >
-            <img src="/1soup_small.gif" alt="Cafe" className="w-6 h-6" />
+            <img src="/watermark_finger_large.png" alt="Cafe" className="w-6 h-6" />
             <span className="translate-y-0.5 hidden sm:inline">Cafe</span>
           </a>
           <a
