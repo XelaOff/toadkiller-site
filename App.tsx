@@ -43,6 +43,14 @@ const App: React.FC = () => {
         {/* Social Links - Right */}
         <div className="flex gap-3">
           <a
+            href="https://soup.toadkiller.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group bg-green-500 hover:bg-green-400 text-green-900 font-cartoon px-4 py-3 rounded-2xl flex items-center gap-2 transition-all hover:scale-105 shadow-[0_6px_0_#166534] active:translate-y-1 active:shadow-none"
+          >
+            <span className="translate-y-0.5">Soup</span>
+          </a>
+          <a
             href="https://t.me/The_Toadkiller"
             target="_blank"
             rel="noopener noreferrer"
